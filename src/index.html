@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Stats</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src= ".././dist/bundle.js"></script>
+</head>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<body class="container">
+<div class="row justify-content-md-center mt-3">
+    <div data-component="app" class="card col-lg-6 noPad">
+        <h2>GitHub Stats</h2>
+        <form data-selector="form">
+            <div class="form-group">
+                <label for="user-name">Please enter GitHub user name</label>
+                <input type="text" class="form-control" id="user-name" placeholder="user mame"
+                       data-component="user-name">
+            </div>
+            <button type="button" class="btn btn-info" id="getStats">Get Stats</button>
+        </form>
+    </div>
+</div>
+<div class="row justify-content-md-center mt-3" id="root"></div>
+</body>
+</html>
